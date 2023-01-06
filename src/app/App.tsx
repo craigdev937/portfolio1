@@ -10,9 +10,13 @@ export const App = (): JSX.Element => {
     return (
         <section id="top" className={`${themeName} app`}>
             <React.Fragment>
-                <About />
                 <Header />
-                <Contact />
+                <section className="main">
+                    <About />
+                    <Contact />
+                </section>
+                {/* Scroll goes here */}
+                {/* Footer goes here */}
             </React.Fragment>
         </section>
     );

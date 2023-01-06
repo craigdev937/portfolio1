@@ -21,7 +21,7 @@ export const About = (): JSX.Element => {
     const { name, role, description, resume, social } = about;
     return (
         <React.Fragment>
-            <main className="about center">
+            <aside className="about center">
                 {name && (
                     <h1>Hi, I'm <span 
                         className="about__name">{name}.</span>
@@ -66,7 +66,7 @@ export const About = (): JSX.Element => {
                         </React.Fragment>
                     )}
                 </section>
-            </main>
+            </aside>
         </React.Fragment>
     );
 };

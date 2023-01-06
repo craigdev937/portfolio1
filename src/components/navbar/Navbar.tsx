@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
-import { BsFillBrightnessHighFill } from "react-icons/bs";
+import { FaMoon } from "react-icons/fa";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { ThemeContext } from "../../context/Theme";
 
@@ -50,7 +50,7 @@ export const Navbar = (): JSX.Element => {
                 className="btn btn--icon nav__theme"
                 aria-label="toggle theme"
                 onClick={toggleTheme}
-                >{themeName === "dark" ? <MdOutlineWbSunny /> : <BsFillBrightnessHighFill />}
+                >{themeName === "dark" ? <MdOutlineWbSunny /> : <FaMoon />}
             </button>
 
             <button

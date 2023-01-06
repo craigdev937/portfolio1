@@ -24,7 +24,6 @@ export const Header = (): JSX.Element => {
 };
 
 const header = {
-    // all the properties are optional.
     homepage: "https://github.com/craigdev937",
     title: "CraigDev937",
 };

@@ -50,12 +50,6 @@ button {
     cursor: pointer;
 }
 
-@media (max-width: 900px) {
-    h1 {
-        font-size: 2.6rem;
-    }
-}
-
 .app {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
@@ -82,7 +76,7 @@ button {
         rgba(255, 255, 255, 0.845) 0px 0px 0px 1px;
 }
 
-main {
+.main {
     max-width: 1100px;
     width: 95%;
     margin: 0 auto;
@@ -205,6 +199,12 @@ main {
 
 .btn--icon:active {
     transform: translateY(-5px);
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.6rem;
+    }
 }
 
 @media (max-width: 600px) {
