@@ -1,0 +1,42 @@
+.project {
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+}
+
+.project__description {
+    margin-top: 1em;
+    color: var(--foreground);
+}
+
+.project__img {
+    height: auto;
+    width: 250px;
+}
+
+.project__tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.2em 0;
+    color: var(--foreground);
+}
+
+.project__link {
+    color: var(--foreground);
+}
+
+.project__icon {
+    height: 42px;
+    width: auto;
+    color: var(--foreground);
+}
+
+

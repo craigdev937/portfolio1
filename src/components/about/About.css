@@ -1,0 +1,49 @@
+.about {
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.about__name {
+    color: var(--primary);
+}
+
+.about__role {
+    margin-top: 1.2em;
+}
+
+.about__desc {
+    font-size: 1rem;
+    max-width: 600px;
+    color: var(--foreground-alt);
+}
+
+.about__desc,
+.about__contact {
+    margin-top: 2.4em;
+}
+
+.about .link--icon {
+    margin-right: 0.8em;
+}
+
+.about__btn {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid var(--foreground);
+    color: #000;
+    border-radius: 10px;
+}
+
+.about__btn:hover {
+    background-color: var(--primary);
+}
+
+@media (max-width: 600px) {
+    .app .about {
+        align-items: flex-start;
+        margin-top: 2em;
+    }
+}
+
+
+

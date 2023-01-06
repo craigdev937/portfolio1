@@ -1,16 +1,20 @@
 import React from "react";
 import "./App.css";
-import Sunrise from "@public/images/sunrise.jpg";
+import { About } from "../components/about/About";
+import { Contact } from "../components/contact/Contact";
+import { Header } from "../components/header/Header";
+import { ThemeContext } from "../context/Theme";
 
 export const App = (): JSX.Element => {
+    const { themeName } = React.useContext(ThemeContext);
     return (
-        <React.Fragment>
-            <h1>App</h1>
-            <img 
-                src={Sunrise} alt="Sunrise"
-                height="500px" width="auto"
-            />
-        </React.Fragment>
+        <section id="top" className={`${themeName} app`}>
+            <React.Fragment>
+                <About />
+                <Header />
+                <Contact />
+            </React.Fragment>
+        </section>
     );
 };
 
