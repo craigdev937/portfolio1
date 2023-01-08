@@ -20,11 +20,13 @@ export const Contact = (): JSX.Element => {
         }, (error) => {
             console.log(error.text);
         });
+        form.current?.reset();
     };
 
     return (
         <React.Fragment>
             <section id="contact" className="contact">
+                <h1>Contact</h1>
                 <form ref={form} onSubmit={handleSubmit}>
                     <aside>
                         <label htmlFor="name">Name</label>
