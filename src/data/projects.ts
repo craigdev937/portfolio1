@@ -10,9 +10,9 @@ export const skills: string[] = [
     "Git",
     "GitHub",
     "Node.js",
-    "REST APIs",
     "Express.js",
     "Express Handlebars",
+    "REST APIs",
     "MongoDB Atlas",
     "PostgreSQL"
 ];

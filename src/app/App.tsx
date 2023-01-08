@@ -6,7 +6,7 @@ import { Header } from "../components/header/Header";
 import { Footer } from "../components/footer/Footer";
 import { Skills } from "../containers/skills/Skills";
 import { Portfolio } from "../containers/portfolio/Portfolio";
-import { ScrollUp } from "../containers/scrollup/ScrollUp";
+import { ScrollToTop } from "../containers/scrollToTop/ScrollToTop";
 import { ThemeContext } from "../context/Theme";
 
 export const App = (): JSX.Element => {
@@ -15,13 +15,13 @@ export const App = (): JSX.Element => {
         <section id="top" className={`${themeName} app`}>
             <React.Fragment>
                 <Header />
-                <section className="main">
-                    <About />
-                    <Skills />
-                    <Portfolio />
-                    <Contact />
-                </section>
-                <ScrollUp />
+                    <section className="main">
+                        <About />
+                        <Skills />
+                        <Portfolio />
+                        <Contact />
+                    </section>
+                <ScrollToTop />
                 <Footer />
             </React.Fragment>
         </section>

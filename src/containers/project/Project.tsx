@@ -3,7 +3,6 @@ import "./Project.css";
 import { TfiGithub } from "react-icons/tfi";
 import { MdLaunch } from "react-icons/md";
 import { IProject } from "../../models/Interfaces";
-import { ScrollUp } from "../scrollup/ScrollUp";
 
 type Props = {
     project: IProject
@@ -44,7 +43,6 @@ export const Project = ({project}: Props): JSX.Element => {
                             className="project__icon" 
                         />
                 </a>
-                <ScrollUp />
             </section>
         </React.Fragment>
     );
