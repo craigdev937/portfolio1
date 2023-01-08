@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 import { TfiGithub } from "react-icons/tfi";
-import { GrLaunch } from "react-icons/gr";
+import { MdLaunch } from "react-icons/md";
 import { IProject } from "../../models/Interfaces";
 import { ScrollUp } from "../scrollup/ScrollUp";
 
@@ -31,7 +31,7 @@ export const Project = ({project}: Props): JSX.Element => {
                     aria-label="website"
                     target="_blank"
                     rel="noreferrer">
-                        <GrLaunch
+                        <MdLaunch
                             className="project__icon" 
                         />
                 </a>

@@ -1,12 +1,59 @@
 import React from "react";
 import "./Contact.css";
+import emailjs from "@emailjs/browser";
 
 export const Contact = (): JSX.Element => {
+    const form = React.useRef<HTMLFormElement>(null);
+
+    const handleSubmit = 
+    (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formInfo = form.current ? form.current: "";
+        emailjs.sendForm(
+            "service_j6mk07w",
+            "template_0jf3c55",
+            formInfo,
+            "wzeV7jLVOTmlUXHYx"
+        )
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
     return (
         <React.Fragment>
             <section id="contact" className="contact">
-                <h1>Contact</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet quisquam consequatur doloremque autem ex neque saepe vitae veritatis maiores obcaecati molestias nisi, non nihil perspiciatis necessitatibus voluptates tenetur unde!</p>
+                <form ref={form} onSubmit={handleSubmit}>
+                    <aside>
+                        <label htmlFor="name">Name</label>
+                        <input 
+                            className="form__input" 
+                            placeholder="Name"
+                            type="text" 
+                            name="user_name" 
+                        />
+                    </aside>
+                    <aside>
+                        <label htmlFor="email">Email</label>
+                        <input 
+                            className="form__input"
+                            placeholder="Email" 
+                            type="email" 
+                            name="user_email" 
+                        />
+                    </aside>
+                    <aside>
+                        <label htmlFor="message">Message</label>
+                        <textarea className="form__message" name="message" />
+                    </aside>
+                    <input 
+                        className="form__button"
+                        type="submit" 
+                        value="Send" 
+                    />
+                </form>
             </section>
         </React.Fragment>
     );

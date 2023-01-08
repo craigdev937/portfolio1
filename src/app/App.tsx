@@ -3,6 +3,9 @@ import "./App.css";
 import { About } from "../components/about/About";
 import { Contact } from "../components/contact/Contact";
 import { Header } from "../components/header/Header";
+import { Footer } from "../components/footer/Footer";
+import { Portfolio } from "../containers/portfolio/Portfolio";
+import { ScrollUp } from "../containers/scrollup/ScrollUp";
 import { ThemeContext } from "../context/Theme";
 
 export const App = (): JSX.Element => {
@@ -13,10 +16,11 @@ export const App = (): JSX.Element => {
                 <Header />
                 <section className="main">
                     <About />
+                    <Portfolio />
                     <Contact />
                 </section>
-                {/* Scroll goes here */}
-                {/* Footer goes here */}
+                <ScrollUp />
+                <Footer />
             </React.Fragment>
         </section>
     );

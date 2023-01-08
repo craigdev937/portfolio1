@@ -3,3 +3,32 @@
     padding: 10em;
     color: var(--foreground);
 }
+
+.form {
+    width: 100vw;
+    max-width: 550px;
+    margin: 2rem auto 5rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+.form__input, 
+.form__message {
+    width: 100%;
+    border: none;
+    border-radius: 0.1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.form__button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--primary);
+    color: #fff;
+}
+

@@ -10,7 +10,7 @@ export const Footer = (): JSX.Element => {
                     href="https://github.com/craigdev937"
                     target="_blank"
                     rel="noreferrer"
-                    >Created by Craig Johnson
+                    >2023 Created by Craig Johnson
                 </a>
             </footer>
         </React.Fragment>
