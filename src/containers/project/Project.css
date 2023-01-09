@@ -13,7 +13,7 @@
 
 .project__description {
     margin-top: 1em;
-    color: var(--foreground);
+    color: var(--accent);
 }
 
 .project__img {
@@ -26,17 +26,17 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 1.2em 0;
-    color: var(--foreground);
+    color: var(--accent);
 }
 
 .project__link {
-    color: var(--foreground);
+    color: var(--accent);
 }
 
 .project__icon {
     height: 42px;
     width: auto;
-    color: var(--foreground);
+    color: var(--accent);
 }
 
 

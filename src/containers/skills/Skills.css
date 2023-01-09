@@ -9,7 +9,7 @@
     max-width: 450px;
     width: 95%;
     margin: 0 auto;
-    color: var(--foreground);
+    color: var(--accent);
 }
 
 .skills__list-item {

@@ -58,8 +58,9 @@ button {
 }
 
 .light {
-    --foreground: #555;
+    --foreground: #000;
     --foreground-alt: #444;
+    --accent: #2e3a5c;
     --background: #dfdfdf;
     --background-alt: #fff;    
     --primary: #2978b5;
@@ -69,6 +70,7 @@ button {
 .dark {
     --foreground: #bdbddd;
     --foreground-alt: #cdcdff;
+    --accent: #ea9caa;
     --background: #0e111d;
     --background-alt: #2a2f4c;
     --primary: #90a0d9;
@@ -98,17 +100,17 @@ button {
 }
 
 .link {
-    color: var(--primary);
+    color: var(--accent);
     padding: 0 0 0.3em 0;
     position: relative;
 }
 
 .link:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .link:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .link::before {
@@ -118,7 +120,7 @@ button {
     height: 0.2em;
     position: absolute;
     bottom: 0;
-    background-color: var(--primary);
+    background-color: var(--accent);
     transition: width 0.2s ease-in;
 }
 
@@ -148,8 +150,8 @@ button {
 }
 
 .btn--outline {
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: var(--accent);
+    border: 2px solid var(--accent);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -163,7 +165,7 @@ button {
 .btn--outline:before {
     content: "";
     position: absolute;
-    background-color: var(--primary);
+    background-color: var(--accent);
     right: 100%;
     bottom: 0;
     left: 0;
@@ -194,7 +196,7 @@ button {
 
 .btn--icon:hover,
 .btn--icon:focus {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .btn--icon:active {

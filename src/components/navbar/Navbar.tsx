@@ -50,7 +50,12 @@ export const Navbar = (): JSX.Element => {
                 className="btn btn--icon nav__theme"
                 aria-label="toggle theme"
                 onClick={toggleTheme}
-                >{themeName === "dark" ? <MdOutlineWbSunny /> : <FaMoon />}
+                >{
+                    themeName === "dark" ? 
+                        <MdOutlineWbSunny 
+                            className="button__sunny" 
+                        /> : 
+                        <FaMoon />}
             </button>
 
             <button

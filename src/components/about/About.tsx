@@ -1,18 +1,19 @@
 import React from "react";
 import "./About.css";
 import { TfiGithub } from "react-icons/tfi";
-import { BsLinkedin } from "react-icons/bs";
+import { FaDev } from "react-icons/fa";
 
 const about = {
     name: "Craig Johnson",
     role: "Web Developer",
     description:
-        `I love connecting with people.  
-        My passion for web development drives me to 
-        succeed in developing new working relationships.`,
+        `I'm a web developer utilizing HTML, CSS, JavaScript, 
+        and TypeScript to build responsive websites 
+        and interactive features.  I love explorering oportunities, 
+        creating new things, and connecting with others.`,
     resume: "https://example.com",
     social: {
-        linkedin: "https://linkedin.com",
+        dev: "https://dev.to",
         github: "https://github.com",
     },
 };
@@ -49,18 +50,18 @@ export const About = (): JSX.Element => {
                                     aria-label="github"
                                     target="_blank"
                                     rel="noreferrer"
-                                    ><TfiGithub />
+                                    ><TfiGithub className="github" />
                                 </a>
                             )}
 
-                            {social.linkedin && (
+                            {social.dev && (
                                 <a 
-                                    href={social.linkedin} 
+                                    href={social.dev} 
                                     className="link link__icon"
-                                    aria-label="linkedin"
+                                    aria-label="DEV"
                                     target="_blank"
                                     rel="noreferrer"
-                                ><BsLinkedin />
+                                ><FaDev className="dev" />
                                 </a>
                             )}
                         </React.Fragment>

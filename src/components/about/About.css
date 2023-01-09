@@ -4,7 +4,7 @@
 }
 
 .about__name {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .about__role {
@@ -35,7 +35,12 @@
 }
 
 .about__btn:hover {
-    background-color: var(--primary);
+    background-color: var(--accent);
+}
+
+.github, .dev {
+    height: 40px;
+    width: 40px;
 }
 
 @media (max-width: 600px) {

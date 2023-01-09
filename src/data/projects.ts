@@ -42,7 +42,7 @@ export const projects: IProject[] = [
         description: "A project teaching Soccer drills.",
         technology: "Webpack, TypeScript, and React.",
         img: "https://cdn.pixabay.com/photo/2022/03/04/11/51/football-game-7047128_1280.jpg",
-        link: "https://en.wikipedia.org/wiki/Soccer_in_the_United_States/",
+        link: "https://en.wikipedia.org/wiki/Soccer_in_the_United_States",
         github: "https://github.com/craigdev937",
     },
     {
@@ -69,7 +69,7 @@ export const projects: IProject[] = [
         description: "A Project about discovering outer space!",
         technology: "Webpack, TypeScript, React, and Redux-Toolkit.",
         img: "https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098_1280.jpg",
-        link: "https://en.wikipedia.org/wiki/Outer_space/",
+        link: "https://en.wikipedia.org/wiki/Outer_space",
         github: "https://github.com/craigdev937",
     },
 ];

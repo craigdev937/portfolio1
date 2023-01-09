@@ -48,7 +48,11 @@ export const Contact = (): JSX.Element => {
                     </aside>
                     <aside>
                         <label htmlFor="message">Message</label>
-                        <textarea className="form__message" name="message" />
+                        <textarea 
+                            className="form__message" 
+                            name="message"
+                            placeholder="Message" 
+                        />
                     </aside>
                     <input 
                         className="form__button"
