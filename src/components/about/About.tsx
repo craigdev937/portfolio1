@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import { TfiGithub } from "react-icons/tfi";
 import { FaDev } from "react-icons/fa";
+import CV from "@public/Craig Johnson.pdf";
 
 const about = {
     name: "Craig Johnson",
@@ -9,17 +10,16 @@ const about = {
     description:
         `I'm a web developer utilizing HTML, CSS, JavaScript, 
         and TypeScript to build responsive websites 
-        and interactive features.  I love explorering oportunities, 
+        with interactive features.  I love explorering oportunities, 
         creating new things, and connecting with others.`,
-    resume: "https://example.com",
     social: {
-        dev: "https://dev.to",
+        dev: "https://dev.to/craigdev937",
         github: "https://github.com",
     },
 };
 
 export const About = (): JSX.Element => {
-    const { name, role, description, resume, social } = about;
+    const { name, role, description, social } = about;
     return (
         <React.Fragment>
             <aside className="about center">
@@ -33,8 +33,8 @@ export const About = (): JSX.Element => {
                 <p className="about__desc">{description && description}</p>
 
                 <section className="about__contact center">
-                    {resume && (
-                        <a href={resume}>
+                    {CV && (
+                        <a href={CV} download>
                             <span className="btn btn--outline">
                                 Resume
                             </span>

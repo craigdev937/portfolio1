@@ -22,7 +22,7 @@ export const ThemeProvider = ({ children }: Props) => {
 
     React.useEffect(() => {
         const darkMediaQuery = window.matchMedia(
-            "(prefers-color-scheme: dark)"
+            "(prefers-color-scheme: light)"
         );
         setThemeName(darkMediaQuery.matches ? "dark" : "light")
         darkMediaQuery.addEventListener("change", (event) => {

@@ -5,6 +5,8 @@ declare module "*.jpe";
 declare module "*.jpg";
 declare module "*.jpeg";
 declare module "*.webp";
+declare module "*.pdf";
+
 
 
 
